@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply font-bold tracking-tight text-slate-900 mt-8 mb-4;
+}
+
+.prose p {
+  @apply leading-relaxed text-slate-600 mb-4;
+}
+
+.prose ul {
+  @apply list-disc pl-6 mb-4 space-y-2;
+}
+
+.prose li {
+  @apply text-slate-600;
+}
+
+.prose strong {
+  @apply font-bold text-blue-600;
+}
